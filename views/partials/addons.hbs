@@ -1,0 +1,24 @@
+<h3>Select parts of cookie</h3>
+
+
+<ul>
+
+    <li> Base: {{cookie.base}} - {{pricify (find-price allBases cookie.base)}} PLN </li>
+    {{#each cookie.addons}}
+        <li>Addon:{{this}} {{pricify (find-price @root.allAddons this)}}  {{#unless ../noDeleteBtn}}
+            <a href="/configurator/remove-addon/{{this}}" class="btn-small">Remove</a>{{/unless}}</li>
+    {{/each}}
+</ul>
+
+<p><strong>Total price {{pricify sum}}</strong></p>
+
+{{!--Arcy wazne w sytuacji kiedy w obiekcie z ktorego ciagniesz dane masz klucze takie same lub nazwe klucza z glownego lancuchu taka sama jak w kolejnym podObiekcie, pamietaj aby uzyc @root.   oznacza to, ze chcesz sie odwolac do glownego obiektu- nurtu --}}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+.cookie-preview{
+    width:601px;
+    height:640px;
+
+}
+
+.error{
+    border:1px solid red;
+    padding:5px;
+    background-color:rosybrown;
+}
+
+.btn{
+    margin:5px;
+    text-decoration: none;
+}
+
+.btn-small{
+    text-decoration: none;
+    background: rosybrown;
+    border: solid 3px ;
+    border-radius: 5px;
+}
+
+.btn-disabled{
+    background: gray;
+    color:white;
+    cursor: not-allowed;
+    pointer-events: none;
+
+}
+
+.btn-big{
+    font-size: 110%;
+}
+
+.success{
+    border:1px solid blue;
+    background-color: darkseagreen;
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    min-height:100vh;
+}
